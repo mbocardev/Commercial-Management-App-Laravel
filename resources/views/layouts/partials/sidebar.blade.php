@@ -1,5 +1,4 @@
 <nav id="sidebar" aria-label="Main Navigation">
-        <!-- Side Header -->
         <div class="content-header">
           <!-- Logo -->
           <a class="fw-semibold text-dual" href="index.html">
