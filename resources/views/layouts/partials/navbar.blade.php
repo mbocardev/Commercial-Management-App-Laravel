@@ -26,9 +26,12 @@
                     <span class="fs-sm fw-medium">Profile</span>
                     <span class="badge rounded-pill bg-primary ms-2">1</span>
                   </a>
-                  <a class="dropdown-item d-flex align-items-center justify-content-between" href="op_auth_signin.html">
-                    <span class="fs-sm fw-medium">Log Out</span>
-                  </a>                  
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+                  </form>
+                  <a class="dropdown-item d-flex align-items-center justify-content-between" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                  <span class="fs-sm fw-medium">Log Out</span>
+                  </a>              
                 </div>                
               </div>
             </div>
